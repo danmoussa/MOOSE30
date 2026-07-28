@@ -1,0 +1,31 @@
+.pio/build/waveshare_c6/FrameworkArduino/idf_openthread_mpool_wrapper.c.o: \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/idf_openthread_mpool_wrapper.c \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/soc_caps.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/qio_qspi/include/sdkconfig.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/assert.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/heap/include/esp_heap_caps.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/heap/include/multi_heap.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_err.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/stdio.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_compiler.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_attr.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_rom/include/esp_rom_sys.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/soc/esp32c6/include/soc/reset_reasons.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_config.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_level.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_assert.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_color.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_buffer.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_timestamp.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_write.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_format.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_args.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_macros.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_assert.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_log_attr.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/log/include/esp_private/log_attr.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/openthread/openthread/include/openthread/instance.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/openthread/openthread/include/openthread/error.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/openthread/openthread/include/openthread/platform/toolchain.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/openthread/openthread/include/openthread/platform/messagepool.h

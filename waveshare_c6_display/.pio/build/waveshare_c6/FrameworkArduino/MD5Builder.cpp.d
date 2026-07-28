@@ -1,0 +1,20 @@
+.pio/build/waveshare_c6/FrameworkArduino/MD5Builder.cpp.o: \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/MD5Builder.cpp \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/HEXBuilder.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/pgmspace.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/ctype.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/Stream.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/Print.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/newlib/platform_include/stdio.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/WString.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/Printable.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/MD5Builder.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_system/include/esp_system.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_err.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_compiler.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_attr.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_bit_defs.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_common/include/esp_idf_version.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/include/esp_rom/include/esp_rom_md5.h \
+ /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/HashBuilder.h

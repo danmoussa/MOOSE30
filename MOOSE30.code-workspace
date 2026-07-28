@@ -1,0 +1,9 @@
+{
+  "folders": [
+    { "name": "Classic ESP32 Audio", "path": "classic_esp32" },
+    { "name": "Waveshare C6 Display", "path": "waveshare_c6_display" }
+  ],
+  "settings": {
+    "platformio-ide.autoRebuildAutocompleteIndex": true
+  }
+}
