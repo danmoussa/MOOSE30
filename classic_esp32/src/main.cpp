@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <cctype>
 #include <cstring>
 #include "AudioTools.h"
 #include "BluetoothA2DPSink.h"
@@ -144,6 +145,26 @@ void executeCommand(const char* command, const char* source) {
   }
 }
 
+void normalizeCommand(char* command) {
+  if (command == nullptr) return;
+
+  size_t start = 0;
+  size_t end = std::strlen(command);
+
+  while (command[start] != '\0' && std::isspace(static_cast<unsigned char>(command[start]))) {
+    ++start;
+  }
+  while (end > start && std::isspace(static_cast<unsigned char>(command[end - 1]))) {
+    --end;
+  }
+
+  size_t writeIndex = 0;
+  for (size_t readIndex = start; readIndex < end && writeIndex < kCommandLength - 1; ++readIndex) {
+    command[writeIndex++] = static_cast<char>(std::toupper(static_cast<unsigned char>(command[readIndex])));
+  }
+  command[writeIndex] = '\0';
+}
+
 void processDisplayCommands() {
   static char command[kCommandLength];
   static size_t length = 0;
@@ -152,7 +173,8 @@ void processDisplayCommands() {
     const char c = static_cast<char>(displayLink.read());
     if (c == '\n') {
       command[length] = '\0';
-      if (length > 0) executeCommand(command, "UART");
+      normalizeCommand(command);
+      if (command[0] != '\0') executeCommand(command, "UART");
       length = 0;
     } else if (c != '\r') {
       if (length < sizeof(command) - 1) command[length++] = c;
@@ -172,7 +194,8 @@ void processUsbCommands() {
     const char c = static_cast<char>(Serial.read());
     if (c == '\n') {
       command[length] = '\0';
-      if (length > 0) executeCommand(command, "USB");
+      normalizeCommand(command);
+      if (command[0] != '\0') executeCommand(command, "USB");
       length = 0;
     } else if (c != '\r') {
       if (length < sizeof(command) - 1) command[length++] = c;

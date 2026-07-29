@@ -78,14 +78,25 @@ bool parseMetadata(const String& line) {
   if (!line.startsWith("META|")) return false;
 
   const int connectedSeparator = line.indexOf('|', 5);
-  const int playingSeparator = connectedSeparator < 0 ? -1 : line.indexOf('|', connectedSeparator + 1);
-  const int artistSeparator = playingSeparator < 0 ? -1 : line.indexOf('|', playingSeparator + 1);
-  if (connectedSeparator < 0 || playingSeparator < 0 || artistSeparator < 0) return false;
+  const int secondSeparator = connectedSeparator < 0 ? -1 : line.indexOf('|', connectedSeparator + 1);
+  const int thirdSeparator = secondSeparator < 0 ? -1 : line.indexOf('|', secondSeparator + 1);
+  const int fourthSeparator = thirdSeparator < 0 ? -1 : line.indexOf('|', thirdSeparator + 1);
+  if (connectedSeparator < 0 || secondSeparator < 0 || thirdSeparator < 0) return false;
 
   connected = line.substring(5, connectedSeparator).toInt() == 1;
-  playing = line.substring(connectedSeparator + 1, playingSeparator).toInt() == 1;
-  copyField(artist, sizeof(artist), line.substring(playingSeparator + 1, artistSeparator));
-  copyField(title, sizeof(title), line.substring(artistSeparator + 1));
+
+  // Accept both formats:
+  // 1) META|connected|playing|artist|title
+  // 2) META|connected|artist|title
+  if (fourthSeparator >= 0) {
+    playing = line.substring(connectedSeparator + 1, secondSeparator).toInt() == 1;
+    copyField(artist, sizeof(artist), line.substring(secondSeparator + 1, thirdSeparator));
+    copyField(title, sizeof(title), line.substring(thirdSeparator + 1));
+  } else {
+    copyField(artist, sizeof(artist), line.substring(secondSeparator + 1, thirdSeparator));
+    copyField(title, sizeof(title), line.substring(thirdSeparator + 1));
+    if (!connected) playing = false;
+  }
   ++receivedPackets;
 
   Serial.printf("[UART][RX] packet=%lu connected=%u playing=%u artist=\"%s\" title=\"%s\"\n",
@@ -97,7 +108,7 @@ bool parseMetadata(const String& line) {
 
 void readLink() {
   static String line;
-line.reserve(kLineLength);
+  line.reserve(kLineLength);
 
   while (classicLink.available() > 0) {
     const char c = static_cast<char>(classicLink.read());
