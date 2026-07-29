@@ -4,6 +4,7 @@
     { "name": "Waveshare C6 Display", "path": "waveshare_c6_display" }
   ],
   "settings": {
-    "platformio-ide.autoRebuildAutocompleteIndex": true
+    "platformio-ide.autoRebuildAutocompleteIndex": true,
+    "C_Cpp.default.configurationProvider": "platformio.platformio-ide"
   }
 }

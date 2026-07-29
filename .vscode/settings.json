@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "pio": true
+    },
+    "platformio-ide.autoRebuildAutocompleteIndex": true,
+    "C_Cpp.default.configurationProvider": "platformio.platformio-ide",
+    "C_Cpp.errorSquiggles": "disabled"
+}

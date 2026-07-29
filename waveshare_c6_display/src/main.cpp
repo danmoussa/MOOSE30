@@ -99,7 +99,7 @@ bool parseMetadata(const String& line) {
   }
   ++receivedPackets;
 
-  Serial.printf("[UART][RX] packet=%lu connected=%u playing=%u artist=\"%s\" title=\"%s\"\n",
+  Serial.print("[UART][RX] packet=%lu connected=%u playing=%u artist=\"%s\" title=\"%s\"\n",
                 static_cast<unsigned long>(receivedPackets), connected ? 1U : 0U,
                 playing ? 1U : 0U, artist, title);
   drawScreen();
