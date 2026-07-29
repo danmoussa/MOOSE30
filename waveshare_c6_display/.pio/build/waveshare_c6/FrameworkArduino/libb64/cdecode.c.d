@@ -1,3 +1,0 @@
-.pio/build/waveshare_c6/FrameworkArduino/libb64/cdecode.c.o: \
- /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/libb64/cdecode.c \
- /Users/highrisehillbilly/.platformio/packages/framework-arduinoespressif32/cores/esp32/libb64/cdecode.h
